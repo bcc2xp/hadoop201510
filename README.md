@@ -27,4 +27,9 @@
 - cut -f 2 entry.tsv | grep jp | cut -d  '/' -f 3 | sort | uniq -c | awk 'BEGIN{sum=0}{sum += $1}END{print sum}' 
 - python -m SimpleHTTPServer
 
+## download from ftp
+
+- ftp 10.120.30.4
+- get EHC_2nd_round_train.log ~/EHC_2nd_round_train.log
+
 
